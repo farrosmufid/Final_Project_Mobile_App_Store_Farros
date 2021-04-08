@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %} Result {% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-1">
+        <h1>Prediction Result: </h1>
+        <h2>It's likely going to be a <u> {{ pred }}</u></h2>
+        <br>
+        <h1>Success Probability:</h1>
+        <h2>{{ prob * 100}} % </h2>
+    </div>
+</div>   
+{% endblock %}

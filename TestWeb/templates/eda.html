@@ -1,0 +1,321 @@
+{% extends "base.html" %}
+
+{% block title %} EDA {% endblock %}
+
+{% block content %}
+
+<div class="col-1">
+<center> <h1>EDA</h1> </center>
+</div>
+<h2>Key Questions </h2> <br><br>
+<p>
+  1. How does app details contribute to user ratings? <br><br>
+  2. Try to compare statistics for different groups! <br><br>
+  3. What should a company do to boost user ratings by looking at app details? <br><br>
+</p>
+<br><br>
+<h2>Assumption </h2> <br><br>
+<p>
+  1. An app is considered successful if the user rating is more or equal to 4. <br><br>
+</p>
+<br><br>
+
+
+<h2>Free and Paid Apps</h2>
+<div class="row">
+  <p class="two">There are <u>3141</u> <u>paid apps</u> in this dataset.<br><br>
+    There are <u>4056</u> <u>free apps</u> in this dataset.</p>
+  <img class="two" src="static/eda/Free_Vs_Paid_Apps_Count.png"/>
+</div>
+
+<h2>Prime Genre</h2>
+<div class="row">
+  <img class="two" src="static/eda/Prime_Genre_Count.png"/>
+  <p class="two">Games are the most numerous followed by Entertainment, Education and Photo & Video.</p>
+</div>
+<div class="row">
+  <p class="two">Games are the most numerous paid apps followed by Education, Entertainment, and Photo & Video.</p>
+  <img class="two" src="static/eda/Prime_Genre_Count_Paid.png"/>
+</div>
+<div class="row">
+  <img class="two" src="static/eda/Prime_Genre_Count_Free.png"/>
+  <p class="two">Games are the most numerous free apps, followed by Entertainment, Photo & Video, and Social Networking.</p>
+</div>
+
+<div class="col">
+  <img style="width: 100%; height: 100%;" src="static/eda/Prime_Genre_Count_Free_and_Paid.png"/>
+  <center>
+  <p> 
+  1. Most <u>Shopping</u>, <u>Social Networking</u>, <u>Games</u>, and <u>Entertainment</u> apps are <u>free</u>. <br><br>
+  2. Most <u>Education</u> and <u>Productivity</u> apps are <u>paid</u>.<br><br>
+  3. Roughly <u>half</u> of <u>Photo & Video</u>, <u>Utilities</u>, and <u>Health & Fitness</u> apps are <u>paid</u>.<br><br>
+  </p>
+  </center>
+</div>
+
+<div class="col">
+  <img style="width: 100%; height: 100%;" src="static/eda/Prime_Genre_vs_User_Rating.png"/>
+  <center>
+  <p >Top 3 Highest User Rating Grouped by Genre:<br><br>
+  1. Productivity<br><br>
+  2. Music<br><br>
+  3. Photo & Video<br><br>
+  </p>
+  </center>
+</div>
+
+<div class="col">
+  <img style="width: 100%; height: 100%;" src="static/eda/Prime_Genre_vs_User_Rating_Free.png"/>
+  <br><br>
+  <center>
+  <p>Top 3 Highest User Rating Grouped by Genre (Free Apps):<br><br>
+  1. Productivity<br><br>
+  2. Music<br><br>
+  3. Photo & Video<br><br>
+  </p>
+  </center>
+</div>
+
+<div class="col">
+  <img style="width: 100%; height: 100%;" src="static/eda/Prime_Genre_vs_User_Rating_Paid.png"/>
+  <br><br>
+  <center>
+  <p>Top 3 Highest User Rating Grouped by Genre (Paid Apps):<br><br>
+  1. Catalogs<br><br>
+  2. Shopping (There is only one data to support this)<br><br>
+  3. Productivity<br><br>
+  4. Music<br><br>
+  </p>
+  </center>
+</div>
+
+<div class="col">
+  <img style="width: 100%; height: 100%;" src="static/eda/Prime_Genre_vs_User_Rating_Free_and_Paid.png"/>
+  <br><br>
+  <center>
+    <p>
+      1. In general apps have much higher ratings when they are paid.<br><br>
+      2. Navigation, Book, Finance, and Catalogs have much higher ratings when they are paid.<br><br>
+      3. Shopping has much higher rating when it is a paid app, however, there is only one paid shopping app is present in our data.<br><br>
+  </p>
+  </center>
+</div>
+
+<div class="col">
+  <img style="width: 100%; height: 100%;" src="static/eda/Prime_Genre_vs_Success.png"/>
+  <br><br>
+  <center>
+    <p>
+      (Success is defined by User Ratings >= 4)<br><br>
+      1. Games, Education, Photo & Video, Health & Fitness, Productivity and Music are most likely to be a successful app.<br><br>
+      2. Book, Travel, Weather, Reference, Food & Drink and Business apps are also most likely to be a successful app despite having a niche market on the app store.
+  </p>
+  </center>
+</div>
+
+<h2>Apps Size</h2>
+
+<div class="row">
+  <p class="two">Highest rated paid apps are between 175 MB - 300 MB in size.<br><br>
+  Highest rated free apps are between 100 MB - 175 MB in size.</p>
+  <img class="two" src="static/eda/Size_vs_User_Rating.png"/>
+</div>
+
+<div class="row">
+  <img src="static/eda/Dist_Plot_Apps_Size.png"/>
+  <p>Apps size distribution plot is heavily right skewed.<br><br>
+  Most apps are around 190 MB in size on average.</p>
+</div>
+
+<div class="row">
+  <p>Apps above 366.6 MB's are upper inner fence outliers.<br><br>
+  10.8% of the data are outliers.</p>
+  <img src="static/eda/Box_Plot_Apps_Size.png"/>
+</div>
+
+<h2>Apps Price</h2>
+
+<div class="row">
+  <img src="static/eda/Dist_Plot_Apps_Price.png"/>
+  <p>Apps price distribution plot is heavily right skewed.<br><br>
+  Apps are mostly priced at around $4.</p>
+</div>
+
+<div class="row">
+  <p>Apps priced above $4.975 are upper fence outliers.<br><br>
+  11.5% of the data are outliers.</p>
+  <img src="static/eda/Box_Plot_Apps_Price.png"/>
+</div>
+
+<div class="row">
+  <img src="static/eda/Price_vs_User_Rating.png"/>
+  <p>It can be seen that higher price can contribute to higher user rating.<br><br>
+  When the price is too high, user rating can be low.</p>
+</div>
+
+<h2>Supported Device Number</h2>
+<div class="row">
+  <p>There are no real relationship betweeen supported device number and user rating.<br><br>
+  When supported device number is less than 37, user rating can dropped to somewhere above 2 and below 4.</p>
+  <img src="static/eda/Supported_Device_Number_vs_User_Rating.png"/>
+</div>
+
+
+<h2>Screenshot Number</h2>
+<div class="row">
+  <img src="static/eda/Screenshot_Num_vs_User_Rating.png"/>
+  <p>It can be seen that higher screenshot number contribute to higher user ratings.<br><br>
+  Keeping 4 screenshots will make the app to have higher ratings.</p>
+</div>
+
+<h2>Supported Languages Number</h2>
+<div class="row">
+  <p>It can be seen that in general, higher number of supported languages contribute to higher user ratings.<br><br>
+    Best apps (5 rated apps) usually have around 4 to 5 languages.<br><br>
+    Apps with 6-7 languages are more likely to be a good app.
+  </p>
+  <img src="static/eda/Num_of_Supported_Lang_vs_User_Rating.png"/>
+</div>
+
+<h2>Vpp</h2>
+<div class="row">
+  <img src="static/eda/Vpp_vs_user_rating.png"/>
+  <p>Apps with Vpp have higher user rating on average.</p>
+</div>
+
+<h2>Content Rating</h2>
+<div class="row">
+  <p>17+ content has an average lower user rating compared to the other content rating.<br><br>
+    9+ content rating has the highest rating among all ages.<br><br>
+  </p>
+  <img src="static/eda/Content_Rating_vs_User_Rating.png"/>
+</div>
+
+<h2>Apps Popularity (Based on Rating Counts)</h2>
+
+<div class="row">
+  <img src="static/eda/Dist_Plot_Rating_Count.png"/>
+  <p>Apps rating distribution plot is heavily right skewed.<br><br>
+  Most apps are rated at around 12900 times on average.<br><br>
+  Facebook is the most highly rated app <br><br>
+  (Rated at approximately 3 million times).
+  </p>
+</div>
+<div class="row">
+  
+  <p>Apps above 6940 rating counts are outliers.<br><br>
+  17.1% of the data are outliers.</p>
+  <img src="static/eda/Box_Plot_Rating_Count.png"/>
+</div>
+
+
+<h2>Correlation Plot</h2>
+<div class="col">
+  <img style="width: 100%; height: 100%;" src="static/eda/Correlation_Heatmap.png"/>
+  <br><br>
+  <center>
+  <p>None of the features are highly correlated to each other except for features having similar attributes.
+  </p>
+  </center>
+</div>
+
+<h2>Top 10 Most Highly Rated Apps</h2>
+<div class="col">
+  <center>
+    <table width=50%>
+      <tr>
+        <th>Rank</th>
+        <th>App Name</th>
+        <th>Prime Genre</th>
+        <th>User Rating</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Facebook</td>
+        <td>Social Media</td>
+        <td>3.5</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Instagram</td>
+        <td>Photo & Video</td>
+        <td>4.0</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Clash of Clans</td>
+        <td>Games</td>
+        <td>4.5</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Temple Run</td>
+        <td>Games</td>
+        <td>4.5</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Pandora - Music & Radio</td>
+        <td>Music</td>
+        <td>4.0</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Pinterest</td>
+        <td>Social Media</td>
+        <td>4.5</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>Reference</td>
+        <td>Reference</td>
+        <td>4.5</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>Candy Crush Saga</td>
+        <td>Games</td>
+        <td>4.5</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>Spotify Music</td>
+        <td>Music</td>
+        <td>4.5</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>Angry Birds</td>
+        <td>Games</td>
+        <td>4.5</td>
+      </tr>
+    </table>
+  </center>
+</div>
+
+<div class="col">
+  <h2>What should a company do to boost user ratings by looking at app details?</h2>
+  <br><br>
+  <h3>Advice on Genre</h3> <br><br>
+  <p> 1. Companies should focus on producing Productivity, Music, and Photo & Video Apps if they want to cater customers interest on apps (Good Ratings).<br><br>
+  <p> 2. For a higher chance of success (User ratings above 4 (included)) companies should look to create Games, Education, Photo & Video, Health & Fitness, Productivity and Music Apps.<br><br>
+  </p>
+  <p> 3. Companies should produce Catalogs, Productivity, Music, and Games app if they want to produce paid apps.<br><br></p>
+  <p> 4. Companies should produce Productivity, Music, Music, and Photo & Video app if they want to produce free apps.<br><br></p>
+  <p> 5. For popularity companies can look to produce for Social Networking, Photo & Video, Games, Music, or Reference apps.<br><br></p>
+  <br><br>
+  <h3>Advice on App Details (For Good User Ratings)</h3> <br><br>
+
+  <p> 1. Companies should keep free apps less than 175 MB and paid apps less than 300 MB.<br><br></p>
+  <p> 2. Companies can avoid creating 17+ content to avoid lower ratings.<br><br></p>
+  <p> 3. In general, paid apps always has better rating than free app.<br><br></p>
+  <p> 4. Higher price usually contribute to higher user ratings, however, when price is too high, user ratings can be low.<br><br></p>
+  <p> 5. Have at least 37 number of supported devices.<br><br></p>
+  <p> 6. Have at least 4 screenshots of your app to be displayed.<br><br></p>
+  <p> 7. Support at least 4-5 languages.<br><br></p>
+  <p> 8. Having Vpp license is a good deal.<br><br></p>
+
+
+</div>
+
+{% endblock %}

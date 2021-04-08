@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %} {% endblock %}</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body>
+        <div class="container">
+            <!-- HEADING -->
+            <div class="navbar">
+                <a href="http://127.0.0.1:5000/"><img src="static/Phones_Img/app_store_logo.png" class="logo"></a>
+            <nav>
+                <ul id="menuList">
+                    <li><a href="http://127.0.0.1:5000/">Home</a></li>
+                    <li><a href="http://127.0.0.1:5000/dataset">Dataset</a></li>
+                    <li><a href="http://127.0.0.1:5000/eda">EDA</a></li>
+                    
+                    <!-- <li><a href="#">Problems and Improvements</a></li> -->
+                    <li><a href="http://127.0.0.1:5000/predict">Predict</a></li>
+                </ul>
+            </nav>
+                <img src="static/Phones_Img/menu.png" class="menu-icon" onclick="togglemenu()">
+            </div>
+
+             <!-- CONTENT -->
+             {% block content %} {% endblock %}
+
+        <div class="social-links">
+            <a href="https://web.facebook.com/farros.mufid.3" target="blank_"><img src="static/Phones_Img/fb.png"/></a>
+            <a href="https://twitter.com/farros__mufid" target="blank_"><img src="static/Phones_Img/tw.png"/></a>
+            <a href="https://www.instagram.com/farrosmufid/" target="blank_"><img src="static/Phones_Img/ig.png"/></a>
+        </div>
+    </div>
+    <script>
+        var menuList = document.getElementById("menuList");
+        
+        menuList.style.maxHeight = "0px";
+        
+        function togglemenu() {
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "130px";
+            } else {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+  </body>
+</html>

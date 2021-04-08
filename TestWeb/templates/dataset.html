@@ -1,0 +1,391 @@
+{% extends "base.html" %}
+
+{% block title %} Dataset {% endblock %}
+
+{% block content %}
+
+<div class="col-1">
+<center>
+<h1>Dataset</h1>
+</center>
+</div>
+
+<h2>About the Dataset</h2>
+<br><br>
+<p>
+Data collection date (from API):<br>
+July 2017<br>
+<br><br>
+Dimension of the data set:<br>
+7197 rows and 16 columns<br>
+<br><br>
+</p>
+
+<h2>Content:</h2><br><br>
+<h2>appleStore.csv</h2>
+<p>
+<br><br>
+1. "id" : App ID<br><br>
+2. "track_name": App Name<br><br>
+3. "size_bytes": Size (in Bytes)<br><br>
+4. "currency": Currency Type<br><br>
+5. "price": Price amount<br><br>
+6. "ratingcounttot": User Rating counts (for all version)<br><br>
+7. "ratingcountver": User Rating counts (for current version)<br><br>
+8. "user_rating" : Average User Rating value (for all version)<br><br>
+9. "userratingver": Average User Rating value (for current version)<br><br>
+10. "ver" : Latest version code<br><br>
+11. "cont_rating": Content Rating<br><br>
+12. "prime_genre": Primary Genre<br><br>
+13. "sup_devices.num": Number of supporting devices<br><br>
+14. "ipadSc_urls.num": Number of screenshots showed for display<<br><br>
+15. "lang.num": Number of supported languages<br><br>
+16. "vpp_lic": Vpp Device Based Licensing Enabled<br><br>
+</p>
+
+<br>
+<font size="1" face="Courier New" >
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Unnamed: 0</th>
+      <th>id</th>
+      <th>track_name</th>
+      <th>size_bytes</th>
+      <th>currency</th>
+      <th>price</th>
+      <th>rating_count_tot</th>
+      <th>rating_count_ver</th>
+      <th>user_rating</th>
+      <th>user_rating_ver</th>
+      <th>ver</th>
+      <th>cont_rating</th>
+      <th>prime_genre</th>
+      <th>sup_devices.num</th>
+      <th>ipadSc_urls.num</th>
+      <th>lang.num</th>
+      <th>vpp_lic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>281656475</td>
+      <td>PAC-MAN Premium</td>
+      <td>100788224</td>
+      <td>USD</td>
+      <td>3.99</td>
+      <td>21292</td>
+      <td>26</td>
+      <td>4.0</td>
+      <td>4.5</td>
+      <td>6.3.5</td>
+      <td>4+</td>
+      <td>Games</td>
+      <td>38</td>
+      <td>5</td>
+      <td>10</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>281796108</td>
+      <td>Evernote - stay organized</td>
+      <td>158578688</td>
+      <td>USD</td>
+      <td>0.00</td>
+      <td>161065</td>
+      <td>26</td>
+      <td>4.0</td>
+      <td>3.5</td>
+      <td>8.2.2</td>
+      <td>4+</td>
+      <td>Productivity</td>
+      <td>37</td>
+      <td>5</td>
+      <td>23</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>281940292</td>
+      <td>WeatherBug - Local Weather, Radar, Maps, Alerts</td>
+      <td>100524032</td>
+      <td>USD</td>
+      <td>0.00</td>
+      <td>188583</td>
+      <td>2822</td>
+      <td>3.5</td>
+      <td>4.5</td>
+      <td>5.0.0</td>
+      <td>4+</td>
+      <td>Weather</td>
+      <td>37</td>
+      <td>5</td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>282614216</td>
+      <td>eBay: Best App to Buy, Sell, Save! Online Shopping</td>
+      <td>128512000</td>
+      <td>USD</td>
+      <td>0.00</td>
+      <td>262241</td>
+      <td>649</td>
+      <td>4.0</td>
+      <td>4.5</td>
+      <td>5.10.0</td>
+      <td>12+</td>
+      <td>Shopping</td>
+      <td>37</td>
+      <td>5</td>
+      <td>9</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>282935706</td>
+      <td>Bible</td>
+      <td>92774400</td>
+      <td>USD</td>
+      <td>0.00</td>
+      <td>985920</td>
+      <td>5320</td>
+      <td>4.5</td>
+      <td>5.0</td>
+      <td>7.5.1</td>
+      <td>4+</td>
+      <td>Reference</td>
+      <td>37</td>
+      <td>5</td>
+      <td>45</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>6</td>
+      <td>283619399</td>
+      <td>Shanghai Mahjong</td>
+      <td>10485713</td>
+      <td>USD</td>
+      <td>0.99</td>
+      <td>8253</td>
+      <td>5516</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>1.8</td>
+      <td>4+</td>
+      <td>Games</td>
+      <td>47</td>
+      <td>5</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>7</td>
+      <td>283646709</td>
+      <td>PayPal - Send and request money safely</td>
+      <td>227795968</td>
+      <td>USD</td>
+      <td>0.00</td>
+      <td>119487</td>
+      <td>879</td>
+      <td>4.0</td>
+      <td>4.5</td>
+      <td>6.12.0</td>
+      <td>4+</td>
+      <td>Finance</td>
+      <td>37</td>
+      <td>0</td>
+      <td>19</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>8</td>
+      <td>284035177</td>
+      <td>Pandora - Music &amp; Radio</td>
+      <td>130242560</td>
+      <td>USD</td>
+      <td>0.00</td>
+      <td>1126879</td>
+      <td>3594</td>
+      <td>4.0</td>
+      <td>4.5</td>
+      <td>8.4.1</td>
+      <td>12+</td>
+      <td>Music</td>
+      <td>37</td>
+      <td>4</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>9</td>
+      <td>284666222</td>
+      <td>PCalc - The Best Calculator</td>
+      <td>49250304</td>
+      <td>USD</td>
+      <td>9.99</td>
+      <td>1117</td>
+      <td>4</td>
+      <td>4.5</td>
+      <td>5.0</td>
+      <td>3.6.6</td>
+      <td>4+</td>
+      <td>Utilities</td>
+      <td>37</td>
+      <td>5</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>10</td>
+      <td>284736660</td>
+      <td>Ms. PAC-MAN</td>
+      <td>70023168</td>
+      <td>USD</td>
+      <td>3.99</td>
+      <td>7885</td>
+      <td>40</td>
+      <td>4.0</td>
+      <td>4.0</td>
+      <td>4.0.4</td>
+      <td>4+</td>
+      <td>Games</td>
+      <td>38</td>
+      <td>0</td>
+      <td>10</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</font>
+<br><br>
+<h2>appleStore_description.csv</h2>
+<br><br>
+<p>
+1. id : App ID<br><br>
+2. track_name: Application name<br><br>
+3. size_bytes: Memory size (in Bytes)<br><br>
+4. app_desc: Application description<br><br>
+</p>
+<font size="1" face="Courier New">
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>id</th>
+      <th>track_name</th>
+      <th>size_bytes</th>
+      <th>app_desc</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>281656475</td>
+      <td>PAC-MAN Premium</td>
+      <td>100788224</td>
+      <td>SAVE 20%, now only $3.99 for a limited time!\n\nOne of the most popular video games in arcade history!\n2015 World Video Game Hall of Fame Inductee\n\nWho can forget the countless hours and quarters spent outrunning pesky ghosts and chompin’ on dots? Now you can have the same arcade excitement on your mobile devices! \nGuide PAC-MAN through the mazes with easy swipe controls, a MFi controller, or kick it old school with the onscreen joystick!\nEat all of the dots to advance to the next stage. Go for high scores and higher levels! Gain an extra life at 10.000 points! Gobble Power Pellets to weaken ghosts temporarily and eat them up before they change back. Avoid Blinky, the leader of the ghosts, and his fellow ghosts Pinky, Inky, and Clyde, or you will lose a life. It’s game over when you lose all your lives.\n\n9 NEW MAZES Included!!!\nThe game includes 9 new mazes in addition to the pixel for pixel recreation of the classic original maze. Challenge your skill to beat them all! We are constantly updating the game with new maze packs that you can buy to complete your PAC-MAN collection.\n\nHINTS and TIPS!!!\nInsider pro-tips and hints are being made available for the first time in-game! Use these to help you become a PAC-MAN champion!\n\nFEATURES:\n• New tournaments\n• New Visual Hints and Pro-tips\n• New mazes for all new challenges\n• Play an arcade perfect port of classic PAC-MAN\n• Two different control modes\n• Three game difficulties (including the original 1980 arcade game)\n• Retina display support\n• MFi controller support</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>281796108</td>
+      <td>Evernote - stay organized</td>
+      <td>158578688</td>
+      <td>Let Evernote change the way you organize your personal and professional projects. Dive in: take notes, create to-do lists, and save things you find online into Evernote. We’ll sync everything between your phone, tablet, and computer automatically.\n\n---\n\n“Use Evernote as the place you put everything… Don’t ask yourself which device it’s on—it’s in Evernote” – The New York Times\n\n“When it comes to taking all manner of notes and getting work done, Evernote is an indispensable tool.” – PC Mag\n\n---\n\nGET ORGANIZED\nEvernote gives you the tools you need to keep your work effortlessly organized:\n• Write, collect and capture ideas as searchable notes, notebooks, checklists and to-do lists\n• Take notes in a variety of formats, including: text, sketches, photos, audio, video, PDFs, web clippings and more\n• Use the camera to effortlessly scan, digitize, and organize your paper documents, business cards, handwritten notes and drawings\n• Use Evernote as a digital notepad and easy-to-format word processor for all your thoughts as they come\n\nSYNC ANYWHERE\nEvernote gives you the ability to sync your content across devices:\n• Sync everything automatically across any computer, phone or tablet\n• Start your task working on one device and continue on another without ever missing a beat\n• Add a passcode lock to the mobile app for more privacy\n\nSHARE YOUR IDEAS\nEvernote gives you the tools to share, discuss and collaborate productively with others:\n• Create, share and discuss with the people who help get your work done, all in one app\n• Search within pictures and annotate images to give quick feedback\n• Develop your projects faster and let multiple participants work on different aspects\n\nEVERNOTE IN EVERYDAY LIFE\n• Make personal checklists to keep your thoughts organized\n• Set reminders to keep on top of activities and write to-do lists\n• Gather, capture and store every thought you need to stay productive\n• Plan events such as holidays, weddings or parties\n\nEVERNOTE IN BUSINESS\n• Create agendas, write memos and craft presentations\n• Annotate documents with comments and thoughts during team meetings, then share with colleagues\n• Get your projects underway faster and maximise productivity by letting multiple participants access and work on different aspects alongside each other\n\nEVERNOTE IN EDUCATION\n• Keep up with lecture notes so you don’t miss a vital thought\n• Clip and highlight articles from the web for academic research\n• Plan and collaborate for better academic group work\n\nBETTER NOTE INTERACTION WITH 3D TOUCH\n• Quick Actions for faster note creation and search\n• Sketch in notes with pressure sensitive ink\n\nEVERNOTE FOR APPLE WATCH\n• Dictate notes and they will be transcribed in Evernote\n• Dictate searches and get results on your Apple Watch\n• View newly created &amp; updated notes\n• Set reminders, get notifications, and never forget anything\n\n---\n\nAlso available from Evernote:\n\nEVERNOTE PLUS - More space. More devices. More freedom.\n• 1 GB of new uploads each month\n• Unlimited number of devices\n• Access your notes and notebooks offline\n• Save emails to Evernote\n$3.99 monthly, $34.99 annually\n\nEVERNOTE PREMIUM - The ultimate workspace.\n• 10 GB of new uploads each month\n• Unlimited number of devices\n• Access your notes and notebooks offline\n• Save emails to Evernote\n• Search inside Office docs and attachments\n• Annotate PDFs\n• Scan and digitize business cards\n• Show notes as presentations, instantly (desktop only)\n$7.99 monthly, $69.99 annually\n\n---\n\nPrice may vary by location. Subscriptions will be charged to your credit card through your iTunes account. Your subscription will automatically renew unless canceled at least 24 hours before the end of the current period. You will not be able to cancel the subscription once activated. Manage your subscriptions in Account Settings after purchase.\n\n---\n\nPrivacy Policy: https://evernote.com/legal/privacy.php \nTerms of Service: https://evernote.com/legal/tos.php</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>281940292</td>
+      <td>WeatherBug - Local Weather, Radar, Maps, Alerts</td>
+      <td>100524032</td>
+      <td>Download the most popular free weather app powered by the largest professional weather network in the world! Our weather network delivers the fastest alerts and the best real-time forecasts (current, hourly and 10-day).\n\n“I love WeatherBug! It’s always accurate &amp; is the first place I go for up-to-the minute weather!” –iOS User\n\nIt's easy to use and has 18 different weather maps including Doppler radar, lightning, wind, temperature, alerts, pressure, and humidity. Join millions who rely on WeatherBug every day!\n\n\nTRACK ANY CONDITION\n• North American Doppler Radar: See Doppler radar across the United States, Canada, Mexico, Alaska &amp; Hawaii\n• PulseRad® Radar: Get radar for many international locations using patented Earth Networks Total Lightning Network® technology.\n• Real-Time Pinpoint Forecasts: Get the most accurate current, hourly and 10-day weather forecasts\n• Enhanced Interactive Map: Visualize weather conditions with 18 weather maps\n• Spark Lightning Alerts: Your personal lightning detector, Spark gives you minute-by-minute, mile-by-mile lightning proximity alerts\n• Real-Time Traffic Conditions: View current traffic conditions to better plan your day\n• Apple Watch Support: Get vital weather information directly on your Apple Watch, including alerts, glances, and complications\n• Lifestyle Forecasts: Know how weather will impact your sports games, workouts, allergies, chronic pain and much more\n• Hurricane Center: Stay informed of all hurricane forecasts and changing conditions to protect you and your loved ones\n\n\nLARGEST WEATHER NETWORK\n• Forecasts for 2.6 million+ locations worldwide\n• Largest total lightning detection network\n• 10,000+ professional-grade weather stations\n• Live weather &amp; traffic cameras\n\n\nFASTEST WEATHER ALERTS\n• Get notified of severe weather 50% faster with our Dangerous Thunderstorm Alerts\n• Receive all National Weather Service watches and warnings\n\n\nBe prepared. Know Before™. Download the app used and loved by millions, voted the “Best Weather App for iPads” by AppPicker, and “Best App for Moms” by Parent Magazine - WeatherBug!</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>282614216</td>
+      <td>eBay: Best App to Buy, Sell, Save! Online Shopping</td>
+      <td>128512000</td>
+      <td>The eBay app is the best way to find anything you need, from dresses, handbags and fashion accessories to new &amp; used cars. Browse our inventory of millions of products from sellers locally and globally to find exactly what you're looking for at a great price.\n\nWith the eBay app, you can buy or sell items and manage your eBay experience wherever you are! Scan products to get info, compare prices or set up a store page instantly- even create a custom page with important details from scanned items. Notifications will let you know each time an auction ends, a customer messages or a user outbids you in an auction so you can stay up to date on the go.\n\nBuy and sell in categories like:\n\neBay Motors\n• Buy new and used cars, trucks, motorcycles and more\n• Outfit your vehicle with decals, accessories and safety equipment\n\nClothing, Shoes &amp; Accessories\n• Find your favorite brands at unbeatable prices\n• Browse sneakers and rare shoes from other collectors\n• Buy designer fashion, jewelry, watches and more cheaper than in-store\n\nHome &amp; Garden\n• Home decor, furniture, paintings, pillows and more\n• Garden and patio furniture, tools and decorations\n• Fun DIY projects, and the materials to make them\n\nHealth, Beauty &amp; More\n• Makeup products from top brands\n• Name brand beauty products &amp; gift ideas\n\nElectronics, Cell Phones &amp; Accessories\n• Find the perfect phone for you and get the best price\n• Get cases, chargers, headphones and accessories for your new phone\n• Miss out on that Black Friday deal? Find amazing deals all year on TVs, laptops and more\n\nSports Equipment &amp; Apparel\n• Workout gear and equipment, new or used\n• Jerseys and apparel from your favorite teams\n\nAnd so much more!\n\nWith the eBay app you can:\n\nBid and buy for incredible discounts:\n• Browse eBay Deals to find featured discounts on top brands, all with free shipping.\n• Find deals on new items or purchase in bulk straight from the source.\n• Search the best deals on millions of items.\n• Price check with different sellers to get the best deal.\n\nSave money on the products you love:\n• Find everything you need for Spring renovations at the right price.\n• Get the things you love for the right price. New or used, eBay has everything from clothes to electronics to cars.\n• Buy your favorite items from our trusted sellers and save money.\n• Choose Buy It Now to get the items you need instantly.\n• Follow your favorite searches and sellers for quick access to the latest inventory.\n\nSell your items in minutes:\n• List your used, new or duplicate items and start making extra money.\n• Choose Buy It Now listings or online auctions to sell anything.\n• Auto-fill product details for even faster setup.\n\nStay up to date with push notifications:\n• See when customers view, bid and watch your items.\n• Message buyers, with instant notifications when they respond.\n\nDiscover new items with our improved browsing experience:\n• Use the new and improved eBay search to find new items\n• Get personalized recommendations based on your shopping habits\n\nTrack orders and get notifications:\n• Get customizable alerts about your eBay items and activity.\n• Track your packages.\n• Leave feedback for sellers.\n• Read and respond to eBay messages.\n• Report missing or un-shipped items.\n\nUse the barcode scanner to search and sell stuff faster:\n• Scan items to search eBay for deals.\n• Auto-create a listing with a simple scan to speed up the selling process.\n• Users scanning items will be able to find your listings faster than ever.\n\neBay gets you top prices on the items you love, and the best value for the things you want to sell. Whether you shop or sell, eBay’s mobile app does it all. We’ll stop here so you can start shopping now.\n\nDownload the eBay app and start your search today!\n_____________________________________\n\nKEEP IN TOUCH\nThanks to all our loyal fans for your support and suggestions! Your feedback is important to us. Please contact us with any questions by tweeting @askebay or join the discussion at www.ebay.com/iOS</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>282935706</td>
+      <td>Bible</td>
+      <td>92774400</td>
+      <td>On more than 250 million devices around the world, people are reading, listening to, watching, and sharing the Bible using the #1 rated Bible App—completely free. Over 1,000 Bible versions, in hundreds of languages. Hundreds of Reading Plans, in over 40 languages. Add your own Verse Images, highlights, bookmarks, and public or private notes.\n\nCustomize your reading experience. Access everything when you’re connected, or download specific versions for offline use.\n\nThe Bible App lets you explore the Bible with your closest friends. Share honest conversations about Scripture with a community of people you know and trust. Learn along with them as you see what they’re discovering.\n\nREAD THE BIBLE\n* Set your Bible App’s interface for your choice of more than 30 languages.\n* Easily select from hundreds of Bible versions, in over 775 languages.\n* Choose from popular versions like the NIV, NASB, ESV, NKJV, NLT, KJV, The Message, and more.\n* Offline Bibles: Read even without network access (available for select versions).\n* Listen to audio Bibles and enjoy all-new skip, playback speed, and timer controls. (Audio Bibles available for select versions and are not downloadable).\n\nUSE THE BIBLE WITH YOUR FRIENDS\n* Put the Bible at the center of your closest relationships with mutual friendships in the Bible App\n* See a stream of Bible activity that shows what you and your friends are noting, bookmarking, and highlighting\n* Comment to share your thoughts, ask questions, and have meaningful conversations in the app as you study God’s Word together\n\nSTUDY THE BIBLE\n* Hundreds of Plans: you’ll find devotionals, as well as Plans that lead you through specific topics, portions of the Bible, or even the entire Bible in a year.\n* Watch and share clips from ‘The Bible’ TV miniseries, the world-changing ‘JESUS’ film, and ‘The Lumo Project.’\n* Search the Bible using keywords.\n\nCUSTOMIZE YOUR BIBLE\n* All-new Themes let you select a color palette for your entire Bible App experience.\n* Verse Images: Turn Bible verses into shareable art.\n* Highlight with custom colors—just like a paper Bible.\n* Bookmark passages: Share, memorize, or just keep track of your favorites.\n* Share verses with friends using social networks, email, or SMS (text).\n* Add notes to passages: Keep them private so only you can see them, or make them public to share with friends.\n* With a free YouVersion account, see all of your notes, highlights, bookmarks, and reading plans on any supported device through cloud syncing.\n* Read easier with settings like fonts, text size, and contrast for bright or low-light conditions.\n\nCONNECT WITH YOUVERSION\n* Contact support from directly inside the Bible App.\n* Like us on Facebook: http://facebook.com/youversion\n* Follow us on Twitter: http://twitter.com/youversion\n* Catch up on the latest on our blog: http://blog.youversion.com\n* Use YouVersion online: http://bible.com\n\nDownload the world’s #1 Bible App now and enjoy the Bible reading experience loved by millions!</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>283619399</td>
+      <td>Shanghai Mahjong</td>
+      <td>10485713</td>
+      <td>★ WINNER "BEST GAME" 2009\n★ 3rd PLACE WINNER "BEST APP EVER" 2010\n"Quite honestly, if you enjoy the game of Mahjong even a little bit, you’d be nuts not to buy this game. It’s the best mahjong available for the iPad or the iPhone" — 148Apps\n\n"Shanghai Mahjong app is the best Mahjong app available on iTunes" — slapapp.com\n\n"This is arguably the best digital version of the game I’ve ever played" — macgamer.com\n\n"absolutely gorgeous!" — gear diary\n\n"If you've been stuck trying to decide which mahjong solitaire game in the App Store will get you the most bang for your buck, it’s time to stop wracking your brain and give Shanghai a try.  It’s a gorgeous and über customizable version of the game you know and love" — appadvice.com\n\n"With solid controls, a variety of game modes, and nearly endless customization via direct downloads, Shanghai Mahjong came away the winner in our Games category. — iLounge.com\n\n"13th Top iOS App of all time" -  148Apps\n\n"You’d be seriously hard-pressed to find a nicer looking mahjong app than Shanghai" — appsafari\n\nShanghai Mahjong, one of the most popular games of all time, returns in this definitive edition. Whether you have two minutes or two hours you'll quickly lose yourself in this classic tile-matching obsession. Shanghai has been carefully designed to look amazing on whichever device you decide to run it on: iPhone, iPad or iPod Touch. \n\nFeatures:\n\n• Photorealistic game tiles\n• 50+ tilesets keep the game fresh\n• 200 different layouts keep your mind active\n• 33 Challenging Game Center achievements\n• Unique Windstorm mode adds new game twists\n• Personalize with custom backgrounds\n• Global Leader boards\n• Detailed Game statistics\n• Supports your background music\n• Post scores to Facebook\n• Fully supports iOS4 and the Retina display.\n\nUNLIMITED CUSTOMIZATION\n=======================\nThose that think that classic Mahjong is so 1924 can rest easy. Now you can choose from an ever expanding library of tilesets to keep the game fresh. From Fractals to Trippy Polish Cinema we automatically make new sets available as they're cranked off the production line.\n\nYou can further personalize the look of the game with an unlimited selection of backgrounds. Choose images from your photo album or from a selection of custom designed artwork\n\nFrom fast two minute games to extended head scratchers, quickly choose from over 200 layouts or select one at random each time you start a game. \n\nLEADERBOARDS AND ACHIEVEMENTS\n===============================\nWondering if you're king of the tile heap? Now you can see how you stack up against friends and other players world wide. From Morphious Moves to Slaying Dragons Shanghai's 33 built-in Game Achievements are guaranteed to test your zen-mettle in new and challenging ways.</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>283646709</td>
+      <td>PayPal - Send and request money safely</td>
+      <td>227795968</td>
+      <td>Description\nTAP INTO YOUR MONEY\nSend money or pay online to almost anywhere in the world in just seconds. Manage all the ways you send, receive, and spend money at a glance – download the PayPal payment app today.\n\nSEND MONEY IN SECONDS\nTransfer money to PayPal account holders in over 100 countries using just their email address or mobile number. When the money arrives in their account (usually in seconds), they can spend the money online or withdraw it with just a tap. And it’s completely free when you send money to friends in the US from your bank account or PayPal balance.\n\nGET PAID WITH EASE\nSend a request for money that allows people to pay you back with just a tap. Whether you’re collecting money for a group gift or something you sold online, PayPal mobile app makes it easy for them and even easier for you. \n\nSTAY ON TOP OF IT ALL\nWhenever you send, receive, and spend money with PayPal, the app sends an instant notification to help you keep track of it all. Whether you use PayPal Credit, your balance, your bank, or your debit and credit cards to pay with PayPal - you can find everything and anything you need to simply manage it all in this secure payment app.</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>284035177</td>
+      <td>Pandora - Music &amp; Radio</td>
+      <td>130242560</td>
+      <td>Find the music you love and let the music you love find you. \n\nPandora gives you a personalized music experience that continually evolves with your tastes. Create free personalized stations from songs, artists or genres.\n\nWant more?\n\nPandora Premium™\nPersonalized radio meets on-demand listening for $12.99/month.\n• Search and play your favorite songs and albums\n• Create playlists, not worklists - on your own or powered by Pandora\n• Download the songs you want to listen offline\n• Unlimited skips and replays\n• Higher quality audio\n• Listen with no ads\n\nPandora Plus™\nListen with more control and no ads for $4.99/month. \n• Unlimited skips and replays\n• Higher quality audio\n• Offline listening for your favorite stations\n\nYour Pandora Plus or Premium subscription will automatically renew each month and your credit card will be charged through your iTunes account. You can turn off auto-renew at any time from your iTunes account settings.\n\nTerms and conditions:\nwww.pandora.com/legal\nwww.pandora.com/legal/subscription\nwww.pandora.com/privacy\n\nNotes:\nPandora Premium will be rolling out to all U.S. listeners on mobile devices soon. Pandora Plus is available in the U.S., Australia and New Zealand. Replay and offline on Pandora Plus are only available in the U.S.\n\nSome advertising exclusions apply. Skips, replays and offline features may be limited by certain licensing restrictions. Pandora may use large amounts of data, and carrier data charges may apply. For best results, we recommend you connect your device to trusted Wi-Fi networks when available.</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>284666222</td>
+      <td>PCalc - The Best Calculator</td>
+      <td>49250304</td>
+      <td>PCalc is the powerful choice for scientists, engineers, students, programmers, or indeed anybody looking for a feature rich calculator. It includes an optional RPN mode and multi-line display, a choice of button layouts, an extensive set of unit conversions and constants, a paper tape, multiple undo and redo, engineering and scientific notation, as well as support for hexadecimal, octal, and binary calculations.\n\nIncludes an Apple Watch app, so you can calculate on your wrist!</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>284736660</td>
+      <td>Ms. PAC-MAN</td>
+      <td>70023168</td>
+      <td>Now with MFi controller support!\n\nMs. PAC-MAN by Namco is one of the most popular video games in American arcade history! Who can forget the countless hours and quarters spent outrunning ghosts and chomping dots? \n\nRe-live the retro action on your iPhone with the queen of the arcades! \n\n- Navigate through the mazes by touching the onscreen Directional Pad in D-Pad Mode. \n- Chomp on dots with the swipe of a finger in Swipe Mode. Munch fruits and other items for big points! \n\nChomp all of the dots to advance to the next stage. Go for high scores and high levels! Gain an extra life at 10,000 points! Gobble blinking Power Pellets to weaken ghosts temporarily and eat them up before they change back. Avoid Blinky, the leader of the ghosts, and his fellow ghosts Pinky, Inky and Sue, or you will lose a life. Lose all your lives and it’s game over! \n\nCHECK OUT THESE OTHER COOL BANDAI NAMCO GAMES: \n\n- PAC-MAN Championship Edition DX\n- PAC-MAN\n- PAC-MAN Friends</td>
+    </tr>
+  </tbody>
+</table>
+</font>
+<br><br>
+
+<h2>Acknowledgements</h2>
+<br><br>
+<p>
+The data was extracted from the iTunes Search API at the Apple Inc website. R and linux web scraping tools were used for this study.
+</p>
+<br><br>
+<h2>License</h2>
+<br><br>
+<p>
+	Copyright (c) 2018 Ramanathan Perumal
+</p>
+
+<br><br>
+
+<h2>Link to Dataset</h2>
+<br><br>
+
+<a target="blank_" href="https://www.kaggle.com/ramamet4/app-store-apple-data-set-10k-apps">App Store Apple Dataset 10k Apps</a>
+
+
+{% endblock %}

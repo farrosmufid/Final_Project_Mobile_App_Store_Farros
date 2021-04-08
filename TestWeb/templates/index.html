@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %} Mobile App Store Analytics {% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-1">
+        <h2>Mobile App Store<br>Analytics</h2>
+        <h3>Analytics for mobile apps</h3>
+        <p>How does app details contribute to the user ratings?</p>
+        <p>Would it be possible to predict the success of a new app?</p>
+        <h4>Let's find out...</h4>
+        <form>
+          <button formaction="http://127.0.0.1:5000/predict">Predict Now<img src="./static/Phones_Img/arrow.png"/button>
+        </form>
+      </div>
+      <div class="col-2">
+          <img src="static/Phones_Img/iPhone12_64GB_Blue.png" class="controller"/>
+          <div class="color-box"></div>
+          <h2></h2>
+      </div>
+</div>
+{% endblock %}
